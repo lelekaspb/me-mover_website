@@ -310,12 +310,12 @@ button.btn {
 footer {
   background-color: #0093be;
   color: #fff;
-  padding: 1vw;
+  padding: 1rem;
   margin-top: 3vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.8vw;
+  font-size: calc(0.3rem + 0.6vw);
 }
 
 footer img {
@@ -375,6 +375,9 @@ a.btn:hover {
   color: #fff;
 }
 
+#index_page h1 {
+  font-size: calc(1rem + 0.6vw);
+}
 
 /* header styles on index page */
 #index_page > header {
@@ -383,6 +386,10 @@ a.btn:hover {
   background-repeat: no-repeat;
   width: 100vw;
   height: 40vw;
+}
+
+.header_wrapper_mobile {
+  display: none;
 }
 
 
@@ -397,12 +404,42 @@ a.btn:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
+
 
 #index_page .header_empty {
   grid-column: 2 /span 1;
 }
 
+@media only screen and (max-width: 750px) {
+  #index_page .header_wrapper {
+    display: none;
+  }
+
+  .header_wrapper_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: 1rem;
+  }
+
+  .header_text_mobile {
+    margin: auto;
+    width: 100%;
+  }
+
+  body#index_page {
+    font-size: calc(0.7rem + 0.5vw);
+  }
+
+  a.btn {
+    width: 100%;
+    font-size: calc(0.7rem + 0.5vw);
+  }
+}
 
 /* outstanding section styles on index page */
 #index_page #outstanding {
@@ -418,6 +455,10 @@ a.btn:hover {
   justify-content: center;
 }
 
+#index_page #outstanding .outstanding_text > p {
+  text-align: right;
+}
+
 #index_page #outstanding .outstanding_text > * {
   margin: 2vw;
 }
@@ -431,17 +472,56 @@ a.btn:hover {
   width: 50vw;
 }
 
+@media only screen and (max-width: 750px) {
+  #index_page #outstanding {
+    margin-top: 1rem;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 50vw 1fr;
+  }
+
+  #index_page #outstanding .outstanding_text {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center; 
+  }
+
+  #index_page #outstanding .outstanding_empty {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    height: 70vw;
+    width: 100vw;
+    background-image: url('../assets/images/me-mover-fit-23-outdoor-fitness-blue.jpg');
+    background-size: 100%;
+  }
+  
+  #index_page #outstanding .outstanding_text > p {
+    text-align: left;
+  }
+
+  #index_page #outstanding .outstanding_text > a {
+    margin: auto;
+  }
+
+  #index_page #outstanding .outstanding_empty {
+    height: auto;
+    width: 100vw;
+  }
+}
 
 /* video section styles on index page */
-/* #video {
-  margin: 0;
-  padding: 0;
-} */
 #video-bg {
   object-fit: cover;
   object-position: center;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  #video {
+    margin-top: 1rem;
+  }
 }
 
 
@@ -455,6 +535,7 @@ a.btn:hover {
   grid-auto-columns: 0.1fr 0.4fr 0.4fr 0.1fr;
   width: 100vw;
   height: 46vw;
+  margin-top: 2rem;
 }
 
 #index_page #moving > .moving_empty {
@@ -471,6 +552,39 @@ a.btn:hover {
 
 #index_page #moving .moving_text > * {
   margin: 2vw;
+}
+
+@media only screen and (max-width: 750px) {
+  #index_page #moving {
+    background-image: none;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 50vw 1fr;
+    height: 100%;
+  }
+
+  #index_page #moving > .moving_empty {
+    background-image: url('../assets/images/guy-in-beach_mobile.jpg');
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 100vw;
+    height: 50vw;
+  }
+
+  #index_page #moving > .moving_text {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center; 
+  }
+
+  #index_page #moving .moving_text > p {
+    text-align: left;
+  }
+
+  #index_page #moving .moving_text > a {
+    margin: auto;
+  }
 }
 
 
