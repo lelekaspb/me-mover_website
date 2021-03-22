@@ -378,11 +378,11 @@ a.btn:hover {
 
 /* header styles on index page */
 #index_page > header {
-  background-image: url('../assets/images/FP-TRY-edited-wide-1-scaled.jpg');
+  background-image: url('../assets/images/for-front-page.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 52vw;
+  height: 40vw;
 }
 
 
@@ -448,13 +448,13 @@ a.btn:hover {
 
 /* moving section styles on index page */
 #index_page #moving {
-  background-image: url('../assets/images/me-mover_canal.jpg');
+  background-image: url('../assets/images/guy-in-beach.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   display: grid;
   grid-auto-columns: 0.1fr 0.4fr 0.4fr 0.1fr;
   width: 100vw;
-  height: 65vw;
+  height: 46vw;
 }
 
 #index_page #moving > .moving_empty {
