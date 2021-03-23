@@ -505,6 +505,9 @@ a.btn:hover {
 }
 
 /* video section styles on index page */
+#video {
+  margin-bottom: -5px;
+}
 #video-bg {
   object-fit: cover;
   object-position: center;
