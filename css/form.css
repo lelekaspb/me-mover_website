@@ -212,7 +212,7 @@ header a:hover {
 }
 
 .header_logo {
-  width: 15vw;
+  width: calc(50px + 15vw);
   height: auto;
 }
 
@@ -228,10 +228,10 @@ header a:hover {
   border-radius: 2px;
 }
 
-.form > form input::placeholder {
+/* .form > form input::placeholder {
   color: #999999;
   font-size: calc(0.5rem + 0.6vw);
-}
+} */
 
 .form > form input:invalid {
   border: 2px solid red;
@@ -239,9 +239,9 @@ header a:hover {
 .form > form input:valid {
   border: 2px solid #0093be;
 }
-.form > form input:placeholder-shown {
+/* .form > form input:placeholder-shown {
   border: 2px solid #999999;
-}
+} */
 .form > form input:focus {
   border: 2px solid #808080;
 }
@@ -428,8 +428,13 @@ a.btn:hover {
   }
 
   a.btn {
-    width: 100%;
+    width: 50%;
     font-size: calc(0.7rem + 0.5vw);
+    margin: 1rem auto;
+  }
+
+  #index_page a.btn:hover {
+    transform: scale(1);
   }
 }
 
@@ -614,7 +619,7 @@ a.btn:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -652,11 +657,10 @@ a.btn:hover {
 @media only screen and (max-width: 1000px) {
 
   #index_page #group-training {
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 2rem; 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 5fr;
+    grid-template-rows: 50vw 1fr;
     width: 100%;
     height: auto;
   }
@@ -664,7 +668,7 @@ a.btn:hover {
   #index_page #group-training > .group-training_empty {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    background-image: url("../assets/images/bootcamp-rent.jpg");
+    background-image: url("../assets/images/group-training_1.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -683,11 +687,11 @@ a.btn:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 1rem;
   }
 
   #index_page #group-training > .group-training_text > a {
-    margin: auto;
-    width: 100%;
+    margin: 0 auto;
   }
 
   .image2 img,
