@@ -152,7 +152,6 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #333333;
   font-size: calc(0.4rem + 0.6vw);
-  /* min-height: 100vh; */
 }
 
 #form_page > main {
@@ -636,8 +635,6 @@ a.btn:hover {
   position: relative;
   z-index: 1;
   border-radius: 100%;
-  /* bottom: 3vw;
-  right: 10vw; */
 }
 
 .image2 img {
