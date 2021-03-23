@@ -650,7 +650,7 @@ a.btn:hover {
 
 /* media query */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
 
   #index_page #group-training {
     margin-top: 1rem;
