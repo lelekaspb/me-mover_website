@@ -657,7 +657,6 @@ a.btn:hover {
 @media only screen and (max-width: 1000px) {
 
   #index_page #group-training {
-    margin-top: 2rem; 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50vw 1fr;
@@ -703,4 +702,10 @@ a.btn:hover {
     text-align: left;
   }
 
+}
+
+@media only screen and (max-width: 750px) {
+  #index_page #group-training {
+    margin-top: 2rem; 
+  }
 }
