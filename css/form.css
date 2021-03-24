@@ -352,6 +352,10 @@ footer .upper {
   #form_page .form {
     grid-column: 1 / span 1;
   }
+
+  #form_page button.btn:hover {
+    transform: scale(1);
+  }
 }
 
 /* index page styles */
@@ -385,7 +389,6 @@ a.btn:hover {
   display: none;
 }
 
-
 #index_page .header_wrapper {
   display: grid;
   grid-template-columns: 5fr 5fr;
@@ -399,7 +402,6 @@ a.btn:hover {
   align-items: flex-start;
   justify-content: center;
 }
-
 
 #index_page .header_empty {
   grid-column: 2 / span 1;
@@ -423,7 +425,7 @@ a.btn:hover {
     width: 100%;
   }
 
-  body#index_page {
+  #index_page > main {
     font-size: calc(0.7rem + 0.5vw);
   }
 
@@ -481,7 +483,7 @@ a.btn:hover {
     grid-row: 2 / span 1;
     padding: 1rem;
     align-items: flex-start;
-    justify-content: center; 
+    justify-content: center;
   }
 
   #index_page #outstanding .outstanding_empty {
@@ -489,10 +491,10 @@ a.btn:hover {
     grid-row: 1 / span 1;
     height: 70vw;
     width: 100vw;
-    background-image: url('../assets/images/me-mover-fit-23-outdoor-fitness-blue.jpg');
+    background-image: url("../assets/images/me-mover-fit-23-outdoor-fitness-blue.jpg");
     background-size: 100%;
   }
-  
+
   #index_page #outstanding .outstanding_text > p {
     text-align: left;
   }
@@ -523,8 +525,6 @@ a.btn:hover {
     margin-top: 1rem;
   }
 }
-
-
 
 /* moving section styles on index page */
 #index_page #moving {
@@ -563,7 +563,7 @@ a.btn:hover {
   }
 
   #index_page #moving > .moving_empty {
-    background-image: url('../assets/images/guy-in-beach_mobile.jpg');
+    background-image: url("../assets/images/guy-in-beach_mobile.jpg");
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     width: 100vw;
@@ -575,7 +575,7 @@ a.btn:hover {
     grid-row: 2 / span 1;
     padding: 1rem;
     align-items: flex-start;
-    justify-content: center; 
+    justify-content: center;
   }
 
   #index_page #moving .moving_text > p {
@@ -586,7 +586,6 @@ a.btn:hover {
     margin: auto;
   }
 }
-
 
 /* group-training section styles on index page */
 #index_page #group-training {
@@ -655,7 +654,6 @@ a.btn:hover {
 /* media query */
 
 @media only screen and (max-width: 1000px) {
-
   #index_page #group-training {
     display: grid;
     grid-template-columns: 1fr;
@@ -678,7 +676,7 @@ a.btn:hover {
   .group-training_empty {
     position: static;
   }
-  
+
   #index_page #group-training > .group-training_text {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
@@ -701,11 +699,10 @@ a.btn:hover {
   #index_page #group-training > .group-training_text > p {
     text-align: left;
   }
-
 }
 
 @media only screen and (max-width: 750px) {
   #index_page #group-training {
-    margin-top: 2rem; 
+    margin-top: 2rem;
   }
 }
