@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/form.css" />
+    <script src="js/lazy.js" defer></script>
     <title>The Me-Mover</title>
   </head>
   <body id="index_page">
@@ -47,7 +48,9 @@
       <div class="outstanding_empty"></div>
     </section>
     <section id="video">
-      <video src="assets/video/video_60s_converted.mp4" id="video-bg" autoplay muted loop controls poster="assets/images/poster.png"></video>
+      <video id="video-bg" preload="none" autoplay="true" muted="true" loop="true" controls playsinline poster="assets/images/poster.png" > 
+        <source data-src="assets/video/video_60s_converted.mp4" type="video/mp4">
+      </video>
     </section>
     <section id="moving">
       <div class="moving_empty"></div>
